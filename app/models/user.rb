@@ -13,27 +13,27 @@ class User < ActiveRecord::Base
     REFERRAL_STEPS = [
         {
             'count' => 5,
-            "html" => "Shave<br>Cream",
+            "html" => "Pot of<br>Lube",
             "class" => "two",
-            "image" =>  ActionController::Base.helpers.asset_path("refer/cream-tooltip@2x.png")
+            "image" =>  ActionController::Base.helpers.asset_path("http://cdn.shopify.com/s/files/1/0258/9827/products/photo_2_11_large.jpg?v=1382999292")
         },
         {
             'count' => 10,
-            "html" => "Truman Handle<br>w/ Blade",
+            "html" => "OM Essentials<br><span>for FREE</span>",
             "class" => "three",
-            "image" => ActionController::Base.helpers.asset_path("refer/truman@2x.png")
+            "image" => ActionController::Base.helpers.asset_path("http://onetaste.us/wp-content/uploads/2014/09/ipad2.jpg")
         },
         {
             'count' => 25,
-            "html" => "Winston<br>Shave Set",
+            "html" => "OM Essentials &<br>OM Nest",
             "class" => "four",
-            "image" => ActionController::Base.helpers.asset_path("refer/winston@2x.png")
+            "image" => ActionController::Base.helpers.asset_path("http://onetaste.us/wp-content/uploads/2014/09/omessentials-nest1.jpg")
         },
         {
             'count' => 50,
-            "html" => "One Year<br>Free Blades",
+            "html" => "Lifetime of Lube<br>& FREE OM Class",
             "class" => "five",
-            "image" => ActionController::Base.helpers.asset_path("refer/blade-explain@2x.png")
+            "image" => ActionController::Base.helpers.asset_path("http://onetaste.us/wp-content/uploads/2014/09/lube-class1.jpg")
         }
     ]
 

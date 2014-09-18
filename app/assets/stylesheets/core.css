@@ -31,7 +31,7 @@ form{
 /* Home */
 
 html.home{
-	background: #EDECEA;
+	background: url('https://onetaste.us/wp-content/uploads/2014/09/lower2.jpg');
 }
 
 #home{
@@ -43,10 +43,21 @@ html.home{
 	margin: 0 auto;
 }
 
+#home .logo {
+position: absolute;
+z-index: 100;
+width: 70%;
+margin: 10px 15% 15%;
+}
+
+#home .logo img {
+width: 170px;
+}
+
 #home .hero{
 	width: 100%;
 	height: 446px;
-	background: url(/assets/home/hero.jpg) center center no-repeat;
+	background: url('https://onetaste.us/wp-content/uploads/2014/09/bg2-1.jpg') 50% 100% no-repeat;
 	background-size: 1600px 446px;
 	overflow: hidden;
 	position: relative;
@@ -54,34 +65,47 @@ html.home{
 	margin: 0 auto;
 }
 
-#home .hero .large{
+#home .hero h1 {
 	font-weight: bold;
 	font-size: 40px;
-	color: #074E6F;
-	text-transform: uppercase;
-	margin: 85px 0 0 136px;
+	color: #333;
+	text-transform: none;
+	margin: 85px 116px 0 0;
 	position: relative;
 	z-index: 2;
-	letter-spacing: 2px;
+	letter-spacing: 0px;
+text-align: center;
+font-weight: 600;
 }
 
-#home .hero .small{
+#home .hero h3 {
 	font-weight: bold;
-	color: #955F5D;
+	color: #333;
 	font-size: 18px;
-	margin: 10px 0 0 115px;
-	line-height: 30px;
+	margin: 10px 115px 0 0;
+	line-height: 150%;
 	position: relative;
 	z-index: 2;
-	text-transform: uppercase;
+font-weight: 6  00;
+	text-transform: none;
 	text-align: center;
-	width: 375px;
-	letter-spacing: 1px;
+	width: auto;
+	letter-spacing: 0px;
+}
+
+#home .hero .text {
+width: 90%;
+margin: auto;
+}
+
+#home .hero .text_box {
+width: 50%;
+float: right;
 }
 
 #home .form-wrap{
 	height: 80px;
-	width: 411px;
+	width: 481px;
 	margin: 23px auto 0;
 }
 
@@ -94,13 +118,14 @@ html.home{
 }
 
 #home .form-wrap .byline{
-	font-size: 15px;
+	font-size: 25px;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: #D1D8D7;
 	text-align: center;
-	font-weight: bold;
+	font-weight: normal;
 	letter-spacing: 2px;
 	margin: 15px 0;
+	font-family: 'Sentinel SSm A', 'Sentinel SSm B';
 }
 
 #home .form-wrap .email{
@@ -111,10 +136,16 @@ html.home{
 	width: 256px;
 	outline: none;
 	letter-spacing: 1px;
+	background: #F6F6F6;
+	font-family: arial;
+	border-radius: 3px;
+	margin-right: 10px;
+	border: 3px solid #E5E5E5 !important;
+
 }
 
 #home .form-wrap .submit{
-	width: 143px;
+	width: 183px;
 	background: #074E6F;
 	float: left;
 	height: 37px;
@@ -124,6 +155,11 @@ html.home{
 	text-transform: uppercase;
 	border: 0;
 	letter-spacing: 2px;
+	cursor: pointer;
+	background: #A8ACA5 !important;
+	font-family: helvetica neue;
+	font-size: 20px !important;
+	border-radius: 5px;
 }
 
 #home .form-wrap.ended{
@@ -247,7 +283,7 @@ html.home{
 }
 
 .brandon{
-	font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+	font-family: 'Sentinel SSm A', 'Sentinel SSm B', "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
 
 #refer{
@@ -255,23 +291,25 @@ html.home{
 }
 
 #refer .page-content{
-	width: 1120px;
+	width: 950px;
 	margin: 0 auto;
 	z-index: 0;
 	position: relative;
 }
 
 #refer .header{
-	height: 50px;
-	background: #074E6F;
+	height: 100px;
+	background: #fff;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
 	position: relative;
+	margin-top: 10px;
 }
 
 #refer .header .content{
-	width: 315px;
+	height: 10px;
+	width: 950px;
 	margin: 0 auto;
 }
 
@@ -293,45 +331,34 @@ html.home{
 	line-height: 0;
 	margin-right: 14px;
 	letter-spacing: 1px;
-	background: url(/assets/refer/logo.png) 0 0 no-repeat;
-	background-size: 106px 19px;
-	height: 19px;
-	width: 106px;
+	background: #fff;
+	background-size: 150px auto;
+	height: 100px;
+	width: 200px;
 	margin-top: 15px;
 }
 
 #refer .hero{
-	background: #F1F0EE;
+	background: #FFF;
 	height: 391px;
 	overflow: hidden;
 }
 
-#refer .mammoth{
-	width: 612px;
-	height: 394px;
-	background: url(/assets/refer/mammoth.png) 0 0 no-repeat;
-	background-size: 610px 394px;
-	overflow: hidden;
-	margin-top: 15px;
-	float: left;
+.orgasm_title {
+float: right;
+text-align: center;
+width: 55%;
+font-weight: 600;
 }
 
-#refer .mammoth .need{
-	color: #FFF;
-	font-size: 38px;
-	text-transform: uppercase;
-	font-weight: bold;
-	margin: 102px 0 0 72px;
-	display: block;
-	line-height: 56px;
-	letter-spacing: 4px;
-	text-align: center;
-	width: 284px;
+.orgasm_title span.need.brandon {
+color: #000;
+font-size: 80px;
 }
 
 #refer .share-wrap{
-	float: right;
-	width: 400px;
+	float: left;
+	width: 35%;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: .13em;
@@ -340,42 +367,55 @@ html.home{
 
 #refer .share-wrap .why{
 	font-size: 16px;
-	color: #555556;
-	font-weight: bold;
+	color: #000;
+	font-weight: 300;
 	margin-top: 42px;
+	text-transform: none;
+	text-align: left;
+	letter-spacing: 0px;
+
 }
 
 #refer .share-wrap .title{
 	font-size: 30px;
-	line-height: 40px;
+	line-height: 120%;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: #000;
+	font-size: 18px;
 	margin-top: 18px;
-	letter-spacing: .13em;
+	letter-spacing: 0px;
+	text-align: left;
 }
 
 #refer .share-wrap .subtitle{
-	color: #565656;
-	font-size: 14px;
+	color: #000;
+	font-size: 15px;
 	text-transform: none;
 	margin-top: 15px;
+	letter-spacing: 0px;
+	text-align: left;
+
 }
 
 #refer .share-wrap .copy-link{
-	border: 1px solid #D1D0C7;
-	background: #FFF;
+	border: 4px solid #D6DFE1;
+	background: #FEFFFD;
 	padding: 10px 0;
-	width: 320px;
+	width: 85%;
 	text-transform: none;
-	font-size: 11px;
-	margin: 20px auto 0;
+	font-size: 13px;
+	margin: 20px 0px 0px;
+	letter-spacing: 1px;
+	border-radius: 10px;
+	color: #999;
+	font-family: arial;
 }
 
 #refer .share-wrap .social-links{
-	width: 120px;
+	width: 200px;
 	height: 37px;
-	margin: 25px auto 0;
+	margin: 25px 0 0;
 	text-align: center;
 }
 
@@ -385,16 +425,16 @@ html.home{
 
 #refer .share-wrap .social-links .fb{
 	background: url(/assets/refer/fb.png);
-	background-size: 27px 27px;
-	width: 27px;
-	height: 27px;
+	background-size: 100px 100px;
+	width: 80px;
+	height: 80px;
 }
 
 #refer .share-wrap .social-links .twit{
 	background: url(/assets/refer/twit.png);
-	background-size: 27px 27px;
-	width: 27px;
-	height: 27px;
+	background-size: 100px 100px;
+	width: 80px;
+	height: 80px;
 }
 
 #refer .share-wrap .social-links .sep{
@@ -409,20 +449,22 @@ html.home{
 	background: #FFF;
 	border-top: 1px solid #D2D1C8;
 	padding-bottom: 100px;
+	background: url('https://onetaste.us/wp-content/uploads/2014/09/lower2.jpg');
 }
 
 #refer .prizes .page-content{
 	position: relative;
+	width: 1120px;
 }
 
 #refer .prizes .callout{
 	text-align: center;
-	font-size: 16px;
-	color: #074E6F;
-	font-weight: bold;
+	font-size: 34px;
+	color: #D2DBDC;
+	font-weight: 300;
 	margin: 20px 0 0 0;
-	letter-spacing: 2px;
-	text-transform: uppercase;
+	letter-spacing: 0px;
+	text-transform: none;
 }
 
 #refer .prizes .progress{
@@ -431,7 +473,7 @@ html.home{
 	background: url(/assets/refer/progress-bg.png) 0 0 repeat-x;
 	background-size: 1px 4px;
 	position: absolute;
-	top: 100px;
+	top: 125px;
 	z-index: 0;
 }
 
@@ -463,6 +505,10 @@ html.home{
 	z-index: 1;
 }
 
+#refer .prizes ul.products p {
+color: #fff;
+}
+
 #refer .prizes .products li.title{
 	height: 100%;
 	text-transform: uppercase;
@@ -473,6 +519,13 @@ html.home{
 	margin-right: 68px;
 	width: 165px;
 	font-weight: bold;
+}
+
+#refer .prizes .products li.title p {
+font-family: 'Oswald', sans-serif;
+color: #E3EBEA;
+font-size: 20px;
+letter-spacing: 0px !important;
 }
 
 #refer .prizes .products li.title .friends{
@@ -497,15 +550,17 @@ html.home{
 #refer .prizes .products li.product .circle{
 	height: 30px;
 	width: 30px;
-	border-radius: 15px;
-	border: 1px solid #DAD9D2;
+	border-radius: 50px;
+	border: 3px solid #545654;
 	text-align: center;
+	padding: 3px;
 	line-height: 30px;
-	color: #868282;
+	color: #FFF;
 	overflow: hidden;
-	background: #F1F0EE;
-	font-weight: bold;
+	background: #000;
+	font-weight: 300;
 	margin: 0 auto;
+	font-size: 18px;
 }
 
 #refer .prizes .products li.product .sep{
@@ -532,6 +587,9 @@ html.home{
 #refer .prizes .products li.product p{
 	text-align: center;
 	font-weight: 500;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	color: #B0B7AF;
 }
 
 #refer .prizes .products li.product:last-child{
@@ -559,15 +617,16 @@ html.home{
 	border-color: #074E6F;
 }
 
-#refer .prizes .products li.product .tooltip{
+#refer .prizes .products li.product .tooltip {
 	height: 254px;
-	width: 190px;
+	width: 250px;
 	border: 4px solid #074E6F;
 	position: absolute;
 	top: -285px;
-	left: -32px;
+	left: -65px;
 	display: none;
 	background: #FFF;
+	overflow: hidden;
 }
 
 #refer .prizes .products li.product .tooltip img{
@@ -581,44 +640,46 @@ html.home{
 
 #refer .prizes p.place{
 	text-align: center;
-	font-size: 16px;
-	color: #074E6F;
 	width: 100%;
-	font-weight: 500;
-	margin-top: 30px;
+	margin-top: 60px;
 }
 
 #refer .prizes p.place span{
-	color: #995F5E;
+	color: #FFF;
 }
 
 #refer .prizes p.check{
 	text-align: center;
-	font-size: 16px;
-	color: #858181;
 	width: 100%;
-	font-weight: 500;
 	margin-top: 5px;
+}
+
+#refer .prizes p.place, #refer .prizes p.check {
+font-size: 22px;
+font-weight: 300;
+color: #B0B7AF;
 }
 
 #refer .prizes p.ship{
-	text-align: center;
-	font-size: 16px;
 	color: #858181;
 	width: 100%;
-	font-weight: 500;
 	margin-top: 50px;
+	color: #B0B7AF;
 }
 
 #refer .prizes a.policy{
-	text-align: center;
-	font-size: 12px;
 	color: #CCCCCC;
 	width: 100%;
-	font-weight: 500;
 	margin-top: 5px;
 	display: block;
 	text-decoration: none;
+}
+
+#refer .prizes p.ship, #refer .prizes a.policy {
+	font-family: helvetica neue, helvetica, arial;
+	font-weight: 300;
+	font-size: 14px;
+	text-align: center;
 }
 
 
@@ -631,7 +692,7 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 	#home .hero{
-		background: url(/assets/home/hero@2x.jpg) center center no-repeat;
+		background: url('https://onetaste.us/wp-content/uploads/2014/09/bg2-1.jpg') 50% 100% no-repeat !important;
 		background-size: 1600px 446px;
 	}
 
@@ -641,23 +702,26 @@ only screen and (min-device-pixel-ratio: 2) {
 	}
 
 	#refer .header .logo{
-		background: url(/assets/refer/logo@2x.png) 0 0 no-repeat;
-		background-size: 106px 19px;
+		background: url(http://onetaste.us/wp-content/uploads/2013/12/onetaste_logo1.png) 0 0 no-repeat;
+		background-size: 200px auto;
 	}
 
 	#refer .mammoth{
-		background: url(/assets/refer/mammoth@2x.png) 0 0 no-repeat;
+		background: #fff;
 		background-size: 610px 394px;
 	}
 
 	#refer .share-wrap .social-links .fb{
-		background: url(/assets/refer/fb@2x.png);
-		background-size: 27px 27px;
+		background: url(http://onetaste.us/wp-content/uploads/2014/09/Facebook-Social-Circle.png) no-repeat;
 	}
 
 	#refer .share-wrap .social-links .twit{
-		background: url(/assets/refer/twit@2x.png);
-		background-size: 27px 27px;
+		background: url(https://onetaste.us/wp-content/uploads/2014/09/Twitter-Social-Circle.png) no-repeat;
+		
+	}
+
+	#refer .share-wrap .social-links .fb, #refer .share-wrap .social-links .twit {
+		background-size: 80px 80px;
 	}
 
 	#refer .prizes .progress{
